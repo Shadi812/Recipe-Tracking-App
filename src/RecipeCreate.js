@@ -35,10 +35,11 @@ function RecipeCreate({ addRecipe }) {
           <tr>
             <td>
               <label htmlFor="name"></label>
+              
               <input
                 id="name"
                 type="text"
-                name="name"
+                name="name" required
                 onChange={handleChange}
                 value={formData.name}
                 placeholder="Name"
@@ -46,10 +47,10 @@ function RecipeCreate({ addRecipe }) {
             </td>
             <td>
               <label htmlFor="cuisine"></label>
-              <input
+              <input 
                 id="cuisine"
                 type="text"
-                name="cuisine"
+                name="cuisine" required
                 onChange={handleChange}
                 value={formData.cuisine}
                 placeholder="Cuisine"
@@ -60,7 +61,7 @@ function RecipeCreate({ addRecipe }) {
               <input 
                 id="photo"
                 type="url"
-                name="photo"
+                name="photo" required
                 onChange={handleChange}
                 value={formData.photo}
                 placeholder="URL"
@@ -71,7 +72,7 @@ function RecipeCreate({ addRecipe }) {
               <textarea
                 id="ingredients"
                 type="text"
-                name="ingredients"
+                name="ingredients" required
                 onChange={handleChange}
                 value={formData.ingredients}
                 placeholder="Ingredients"
@@ -82,7 +83,7 @@ function RecipeCreate({ addRecipe }) {
               <textarea
                 id="preparation"
                 type="text"
-                name="preparation"
+                name="preparation" required
                 onChange={handleChange}
                 value={formData.preparation}
                 placeholder="Preparation"
